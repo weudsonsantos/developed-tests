@@ -1,0 +1,104 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+   
+    background-color: #e73ca6;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'arial';
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fcfcfc;
+    font-weight: bold;
+}
+
+section#produtos {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.produto {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.produto:hover {
+    transform: scale(1.05);
+}
+
+.produto img {
+    width: 30%;
+    max-height: 600px;
+    object-fit: cover;
+}
+
+.produto h3 {
+    margin: 5px 0;
+}
+
+.produto p {
+    margin: 5px 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Estilo para o botão de WhatsApp flutuante */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: #fff;
+    padding: 15px;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    display: none;
+}
+
+.whatsapp-float i {
+    font-size: 24px;
+}
+
+.whatsapp-float:hover {
+    background-color: #128C7E;
+}
+
+/* Exibe o botão de WhatsApp flutuante em telas maiores que 600px */
+@media only screen and (min-width: 200px) {
+    .whatsapp-float {
+        display: inline-block;
+    }
+}
